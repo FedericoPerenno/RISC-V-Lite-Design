@@ -1,0 +1,144 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../src_abs//RISC_V.vhd:303: Physical types are not supported. Presto ignores it. (ELAB-918)
+Warning:  ../src_abs//RISC_V.vhd:349: Signal assignment delays are not supported for synthesis. They are ignored. (ELAB-924)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'RISC_V'.
+Information: Building the design 'Instruc_Fetch' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Reg_slv' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine Reg_slv_N32 line 21 in file
+		'../src_abs//Reg_slv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Reg' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine Reg_N32 line 21 in file
+		'../src_abs/Reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Instruc_Decode' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Reg_slv' instantiated from design 'RISC_V' with
+	the parameters "N=2". (HDL-193)
+
+Inferred memory devices in process
+	in routine Reg_slv_N2 line 21 in file
+		'../src_abs//Reg_slv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Reg_slv' instantiated from design 'RISC_V' with
+	the parameters "N=3". (HDL-193)
+
+Inferred memory devices in process
+	in routine Reg_slv_N3 line 21 in file
+		'../src_abs//Reg_slv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |   3   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'FF'. (HDL-193)
+
+Inferred memory devices in process
+	in routine FF line 20 in file
+		'../src_abs//FF.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Reg_slv' instantiated from design 'RISC_V' with
+	the parameters "N=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine Reg_slv_N5 line 21 in file
+		'../src_abs//Reg_slv.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      DOUT_reg       | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Execute' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'MEM' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'WB' instantiated from design 'RISC_V' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1_slv' instantiated from design 'Instruc_Fetch_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Imm_gen' instantiated from design 'Instruc_Decode_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CU'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Hazard_Detec_Unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Reg_file' instantiated from design 'Instruc_Decode_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Forwarding_Unit_ID'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'Instruc_Decode_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1_slv' instantiated from design 'Instruc_Decode_N32' with
+	the parameters "N=11". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_4to1' instantiated from design 'Execute_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Forwarding_Unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU_Control'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALU' instantiated from design 'Execute_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux8to1' instantiated from design 'Imm_gen_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Decoder7to4'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ROM'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Mux_32to1' instantiated from design 'Reg_file_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Shift' instantiated from design 'ALU_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux16to1' instantiated from design 'Mux_32to1_N32' with
+	the parameters "N=32". (HDL-193)
+Presto compilation completed successfully.
+1

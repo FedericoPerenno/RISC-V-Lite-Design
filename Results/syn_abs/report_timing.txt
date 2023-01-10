@@ -1,0 +1,94 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC_V' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V
+Version: O-2018.06-SP4
+Date   : Tue Feb 15 20:12:52 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: AddRd_EX_MEM/DOUT_reg[4]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: ALURes_EX_MEM/DOUT_reg[28]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V             5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  AddRd_EX_MEM/DOUT_reg[4]/CK (DFF_X1)                    0.00 #     0.00 r
+  AddRd_EX_MEM/DOUT_reg[4]/Q (DFF_X1)                     0.09       0.09 f
+  AddRd_EX_MEM/DOUT[4] (Reg_slv_N5_1)                     0.00       0.09 f
+  EX/EX_MEM_Rd[4] (Execute_N32)                           0.00       0.09 f
+  EX/FU/EX_MEM_Rd[4] (Forwarding_Unit)                    0.00       0.09 f
+  EX/FU/U33/ZN (XNOR2_X1)                                 0.06       0.15 f
+  EX/FU/U32/ZN (NAND4_X1)                                 0.04       0.19 r
+  EX/FU/U9/ZN (NOR2_X1)                                   0.03       0.21 f
+  EX/FU/U5/ZN (NOR3_X2)                                   0.07       0.29 r
+  EX/FU/ForwardB[0] (Forwarding_Unit)                     0.00       0.29 r
+  EX/M_4to1_B/sel[0] (Mux_4to1_N32_20)                    0.00       0.29 r
+  EX/M_4to1_B/U50/ZN (INV_X1)                             0.04       0.32 f
+  EX/M_4to1_B/U7/ZN (AND2_X1)                             0.05       0.37 f
+  EX/M_4to1_B/U51/ZN (AOI222_X1)                          0.10       0.48 r
+  EX/M_4to1_B/U53/ZN (NAND2_X1)                           0.05       0.52 f
+  EX/M_4to1_B/out_mux[0] (Mux_4to1_N32_20)                0.00       0.52 f
+  EX/M_2to1/in0[0] (mux2to1_N32_17)                       0.00       0.52 f
+  EX/M_2to1/U36/Z (MUX2_X2)                               0.09       0.61 f
+  EX/M_2to1/out_mux[0] (mux2to1_N32_17)                   0.00       0.61 f
+  EX/A/In1[0] (ALU_N32)                                   0.00       0.61 f
+  EX/A/r303/B[0] (ALU_N32_DW01_add_4)                     0.00       0.61 f
+  EX/A/r303/U392/ZN (NAND2_X1)                            0.04       0.65 r
+  EX/A/r303/U424/ZN (OAI21_X1)                            0.03       0.68 f
+  EX/A/r303/U457/ZN (AOI21_X1)                            0.04       0.72 r
+  EX/A/r303/U592/ZN (OAI21_X1)                            0.04       0.76 f
+  EX/A/r303/U553/ZN (AOI21_X1)                            0.06       0.81 r
+  EX/A/r303/U373/Z (BUF_X1)                               0.04       0.85 r
+  EX/A/r303/U725/ZN (OAI21_X1)                            0.03       0.89 f
+  EX/A/r303/U625/ZN (XNOR2_X1)                            0.06       0.95 f
+  EX/A/r303/SUM[20] (ALU_N32_DW01_add_4)                  0.00       0.95 f
+  EX/A/sub_abs_84/B[20] (ALU_N32_DW01_sub_8)              0.00       0.95 f
+  EX/A/sub_abs_84/U236/ZN (NOR2_X1)                       0.05       1.00 r
+  EX/A/sub_abs_84/U254/ZN (NAND2_X1)                      0.04       1.03 f
+  EX/A/sub_abs_84/U180/ZN (NOR2_X1)                       0.06       1.09 r
+  EX/A/sub_abs_84/U285/ZN (NAND2_X1)                      0.03       1.12 f
+  EX/A/sub_abs_84/U269/ZN (NOR2_X1)                       0.04       1.16 r
+  EX/A/sub_abs_84/U260/ZN (XNOR2_X1)                      0.03       1.19 f
+  EX/A/sub_abs_84/DIFF[28] (ALU_N32_DW01_sub_8)           0.00       1.19 f
+  EX/A/U53/ZN (NAND2_X1)                                  0.03       1.22 r
+  EX/A/U319/ZN (NAND2_X1)                                 0.03       1.25 f
+  EX/A/Out_ALU[28] (ALU_N32)                              0.00       1.25 f
+  EX/Out_ALU[28] (Execute_N32)                            0.00       1.25 f
+  ALURes_EX_MEM/DIN[28] (Reg_N32_38)                      0.00       1.25 f
+  ALURes_EX_MEM/U70/ZN (AOI22_X1)                         0.05       1.30 r
+  ALURes_EX_MEM/U71/ZN (INV_X1)                           0.02       1.32 f
+  ALURes_EX_MEM/DOUT_reg[28]/D (DFF_X1)                   0.01       1.33 f
+  data arrival time                                                  1.33
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ALURes_EX_MEM/DOUT_reg[28]/CK (DFF_X1)                  0.00       0.00 r
+  library setup time                                     -0.04      -0.04
+  data required time                                                -0.04
+  --------------------------------------------------------------------------
+  data required time                                                -0.04
+  data arrival time                                                 -1.33
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.37
+
+
+1
